@@ -7,9 +7,10 @@ public class TestCaseGetStatus extends TestCase{
     }
 
     @Override
-    public void getTestStatus(HashMap<String, Boolean> testResults, String nameTest) {
+    public boolean getTestStatus(HashMap<String, Boolean> testResults, String nameTest) {
         if (testResults.get(nameTest)){
             System.out.println("This test status is: OK. Status = "+testResults.get(nameTest));
         }
+        return true;
     }
 }
